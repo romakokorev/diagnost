@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карьерная диагностика ВШТ — Онлайн-турагент</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Unbounded:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- html2pdf Library for PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+  <!-- Main App Wrapper -->
+  <div class="app-container">
+    
+    <!-- PROGRESS HEADER (Circles 1 to 12) -->
+    <header class="progress-header">
+      <div class="progress-info-row">
+        <div class="progress-title-block">
+          <span class="progress-title-main">Карьерная консультация</span>
+          <span class="progress-title-sub">от Высшей Школы Туризма</span>
+        </div>
+        <span class="progress-step-text" id="progress-step-text">1 из 12</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+      </div>
+      <div class="progress-nodes" id="progress-nodes">
+        <div class="progress-node active" data-step="1">1</div>
+        <div class="progress-node" data-step="2">2</div>
+        <div class="progress-node" data-step="3">3</div>
+        <div class="progress-node" data-step="4">4</div>
+        <div class="progress-node" data-step="5">5</div>
+        <div class="progress-node" data-step="6">6</div>
+        <div class="progress-node" data-step="7">7</div>
+        <div class="progress-node" data-step="8">8</div>
+        <div class="progress-node" data-step="9">9</div>
+        <div class="progress-node" data-step="10">10</div>
+        <div class="progress-node" data-step="11">11</div>
+        <div class="progress-node" data-step="12">12</div>
+      </div>
+    </header>
+
+    <!-- MAIN VIEWPORT -->
+    <main class="viewport">
+      
+      <!-- STEP 1: WELCOME SCREEN (Visual Left, White Card Right) -->
+      <section class="step-card active" id="step-1">
+        <div class="welcome-layout">
+          <!-- Left Visual (directly on body background) -->
+          <div class="welcome-visual">
+            <img src="image/logo.png" alt="Высшая Школа Туризма" class="big-logo">
+            <div class="rating-badge-flat">
+              <div class="stars">★★★★★</div>
+              <div class="rating-val">4.9 из 5</div>
+              <div class="rating-count">Основано на 500+ отзывах</div>
+            </div>
+          </div>
+          <!-- Right Content (white card) -->
+          <div class="welcome-content white-card">
+            <h1 class="welcome-title">Построй свой путь <br>в профессии <br><span class="brand-accent-text">онлайн-турагент</span></h1>
+            <div class="decorative-line-brand"></div>
+            <p class="welcome-desc">
+              Карьерная консультация – это пошаговый разбор профессиональных компетенций, на котором вы получите:
+            </p>
+            <ul class="welcome-list">
+              <li>
+                <span class="bullet-dot">•</span>
+                <span class="list-text">Персональную карту развития</span>
+              </li>
+              <li>
+                <span class="bullet-dot">•</span>
+                <span class="list-text">План выхода на доход от <span class="brand-accent-text">100.000 р.</span> в месяц</span>
+              </li>
+            </ul>
+            <div class="start-btn-row">
+              <button class="btn btn-primary btn-gradient btn-next" data-next="2">Далее <span class="arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2: ABOUT THE FOUNDER (Wrapped in White Card) -->
+      <section class="step-card" id="step-2">
+        <div class="white-card founder-layout-card">
+          <div class="founder-content">
+            <h2 class="section-title">Ольга Коныгина</h2>
+            <h3 class="section-subtitle">Директор и основатель школы</h3>
+            <div class="decorative-line-brand"></div>
+            <ul class="founder-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <p>В сфере туризма с 2006 года</p>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <p>От удаленной работы до директора крупного турагентства</p>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <p>Официальная лицензия от Министерства Образования (2019)</p>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <p>3500+ выпускников за 15 лет работы</p>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <p>600+ учеников зарабатывают до 300 000 руб./мес.</p>
+              </li>
+            </ul>
+            <div class="nav-buttons">
+              <button class="btn btn-secondary btn-back" data-prev="1">Назад</button>
+              <button class="btn btn-primary btn-gradient btn-next" data-next="3">Далее <span class="arrow">→</span></button>
+            </div>
+          </div>
+          <div class="founder-photo-container">
+            <div class="photo-card">
+              <img src="image/olga.png" alt="Ольга Коныгина" class="founder-photo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3: QUESTIONNAIRE (Wrapped in White Card) -->
+      <section class="step-card" id="step-3">
+        <div class="white-card">
+          <h2 class="section-title text-center">Теперь поговорим о вас</h2>
+          <p class="section-desc text-center">
+            Смысл этого блока: узнать базовую информацию о вас, чтобы понять, какие инструменты мы можем предложить
+          </p>
+          
+          <form id="user-info-form" class="diagnostic-form">
+            <div class="form-table-layout">
+              
+              <div class="form-row">
+                <div class="form-label-cell">Как к вам обращаться?</div>
+                <div class="form-input-cell">
+                  <input type="text" id="user-name" name="name" placeholder="Введите ваше имя" class="form-input-dotted">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Чем сейчас занимаетесь?</div>
+                <div class="form-input-cell">
+                  <input type="text" id="user-activity" name="activity" placeholder="Фриланс, наемный сотрудник, декрет и т.д." class="form-input-dotted">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Почему для вас стало актуально сейчас разобраться в профессии онлайн-турагент?</div>
+                <div class="form-input-cell">
+                  <textarea id="user-reason" name="reason" class="form-input-dotted text-area"></textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">В чем видите ключевые сложности, связанные с заработком на туризме?</div>
+                <div class="form-input-cell">
+                  <textarea id="user-challenges" name="challenges" class="form-input-dotted text-area"></textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Какой у вас доход сейчас в текущей деятельности?</div>
+                <div class="form-input-cell">
+                  <input type="number" id="user-income-current" name="income_current" placeholder="Например: 50000" class="form-input-dotted" min="0">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">К какому доходу вы хотите прийти?</div>
+                <div class="form-input-cell">
+                  <input type="number" id="user-income-target" name="income_target" placeholder="Например: 150000" class="form-input-dotted" min="0">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Когда вы хотите прийти к этому результату?</div>
+                <div class="form-input-cell">
+                  <input type="text" id="user-timeframe" name="timeframe" placeholder="Например: за 3 месяца" class="form-input-dotted">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Какой у вас опыт в организации путешествий, бронировании туров на данный момент?</div>
+                <div class="form-input-cell">
+                  <textarea id="user-experience" name="experience" class="form-input-dotted text-area"></textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-label-cell">Что вдохновляет вас в этой деятельности?</div>
+                <div class="form-input-cell">
+                  <input type="text" id="user-inspiration" name="inspiration" class="form-input-dotted">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="nav-buttons align-center">
+              <button type="button" class="btn btn-secondary btn-back" data-prev="2">Назад</button>
+              <button type="button" class="btn btn-primary btn-gradient" id="btn-submit-form">Далее <span class="arrow">→</span></button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- STEP 4: COMPETENCY TEST (Wrapped in White Card) -->
+      <section class="step-card" id="step-4">
+        <div class="white-card">
+          <h2 class="section-title text-center">Тест: Какие навыки вам необходимы, чтобы стать профессиональным турагентом</h2>
+          <p class="section-desc text-center">
+            Смысл этого блока: определить уровень ваших компетенций и создать стратегию роста
+          </p>
+          
+          <div class="test-progress-bar-wrapper">
+            <span class="test-progress-label">Прогресс заполнения</span>
+            <div class="test-progress-line-container">
+              <div class="test-progress-line-fill" id="test-bar-fill"></div>
+            </div>
+            <span class="test-progress-fraction" id="test-progress-text">0/6</span>
+          </div>
+
+          <div class="test-grid">
+            <!-- Card 1 -->
+            <div class="competency-card" data-comp="1">
+              <h3 class="comp-title">1. Знание направлений и турпродуктов</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="competency-card" data-comp="2">
+              <h3 class="comp-title">2. Техника бронирования (системы, туроператоры)</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="competency-card" data-comp="3">
+              <h3 class="comp-title">3. Продажи и работа с клиентами</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="competency-card" data-comp="4">
+              <h3 class="comp-title">4. Документы, визы, правовые аспекты</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="competency-card" data-comp="5">
+              <h3 class="comp-title">5. Маркетинг и личный бренд</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="competency-card" data-comp="6">
+              <h3 class="comp-title">6. Послепродажное сопровождение</h3>
+              <div class="rating-scale">
+                <button type="button" class="rating-circle" data-val="1">1</button>
+                <button type="button" class="rating-circle" data-val="2">2</button>
+                <button type="button" class="rating-circle" data-val="3">3</button>
+                <button type="button" class="rating-circle" data-val="4">4</button>
+                <button type="button" class="rating-circle" data-val="5">5</button>
+              </div>
+              <div class="comp-comment-box">Оцените ваш уровень знаний</div>
+            </div>
+          </div>
+
+          <div class="nav-buttons align-center">
+            <button class="btn btn-secondary btn-back" data-prev="3">Назад</button>
+            <button class="btn btn-primary btn-gradient" id="btn-submit-test" disabled>Провести анализ ситуации</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 5: RADAR CHART AND DIAGNOSIS -->
+      <section class="step-card" id="step-5">
+        <!-- Diagnosis Accordion -->
+        <div class="diagnosis-accordion-wrapper">
+          <div class="accordion-header" id="accordion-trigger">
+            <span class="accordion-label">Текущий диагноз:</span>
+            <span class="accordion-title" id="diagnosis-text">Перспективный тревел-эксперт</span>
+            <span class="accordion-arrow">▼</span>
+          </div>
+          <div class="accordion-body" id="accordion-content">
+            <p id="diagnosis-description">
+              Ваши показатели формируют индивидуальный карьерный профиль. Сфокусируйтесь на улучшении слабых компетенций.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="section-title text-center margin-top-md">Колесо баланса вашей текущей ситуации</h2>
+        
+        <div class="balance-wheel-layout">
+          <!-- Left Indicators List (White Card with Brand Border) -->
+          <div class="indicators-box border-brand">
+            <h3 class="box-title">Ваши показатели:</h3>
+            <ul class="indicators-list" id="indicators-list">
+              <li data-index="0">
+                <span class="indicator-dot skills-dot"></span>
+                <span class="indicator-name">Знание направлений:</span>
+                <span class="indicator-val" id="val-skills">0/5</span>
+              </li>
+              <li data-index="1">
+                <span class="indicator-dot speed-dot"></span>
+                <span class="indicator-name">Техника бронирования:</span>
+                <span class="indicator-val" id="val-speed">0/5</span>
+              </li>
+              <li data-index="2">
+                <span class="indicator-dot clients-dot"></span>
+                <span class="indicator-name">Продажи и клиенты:</span>
+                <span class="indicator-val" id="val-clients">0/5</span>
+              </li>
+              <li data-index="3">
+                <span class="indicator-dot confidence-dot"></span>
+                <span class="indicator-name">Правовые аспекты:</span>
+                <span class="indicator-val" id="val-confidence">0/5</span>
+              </li>
+              <li data-index="4">
+                <span class="indicator-dot check-dot"></span>
+                <span class="indicator-name">Маркетинг и бренд:</span>
+                <span class="indicator-val" id="val-check">0/5</span>
+              </li>
+              <li data-index="5">
+                <span class="indicator-dot income-dot"></span>
+                <span class="indicator-name">Сопровождение:</span>
+                <span class="indicator-val" id="val-income">0/5</span>
+              </li>
+            </ul>
+            <div class="average-score-container">
+              <span>Средний балл:</span>
+              <strong id="average-score" class="text-danger">2.8</strong>
+            </div>
+          </div>
+
+          <!-- Middle Radar Chart View (White Card with Brand Border) -->
+          <div class="chart-container border-brand">
+            <svg id="radar-chart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+              <!-- SVG elements dynamically loaded -->
+            </svg>
+          </div>
+
+          <!-- Right Recommendations Box (White Card) -->
+          <div class="recommendations-box" id="rec-box">
+            <h3 class="box-title">Рекомендации:</h3>
+            <div class="rec-placeholder" id="rec-placeholder">
+              <span class="cursor-icon">🖱️</span>
+              <p>Наведите курсор на любую точку колеса баланса, чтобы увидеть детальные рекомендации по улучшению этого показателя</p>
+            </div>
+            <div class="rec-detail hidden" id="rec-detail">
+              <h4 class="rec-title-selected" id="rec-title-selected">Название показателя</h4>
+              <p class="rec-text" id="rec-text">Здесь будет рекомендация.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="4">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="6">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEPS 6 TO 11: TOOLS -->
+      
+      <!-- STEP 6: STRANOVEDENIE -->
+      <section class="step-card" id="step-6">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <!-- Tab bar -->
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p active" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p" data-go-step="11">Документы и право</button>
+        </div>
+
+        <!-- Yellow flat cards grid -->
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Топ-10 массовых международных направлений (Турция, Египет, ОАЭ, Таиланд, Греция, Кипр, Мальдивы, Шри-Ланка, Вьетнам, Тунис)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Топ-8 регионов РФ (Краснодарский край, Крым, Дагестан, Алтай, Байкал, Карелия, Калининград, Мурманск)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Сезонность, визы, валюта, погода, часы перелёта по каждой стране</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Пляжный отдых, “зимние пляжи”. горнолыжные курорты</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Малоизвестные, но востребованные направления (Бали, Сейшелы, Занзибар, Куба, Катар)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Автобусные туры, круизы, экскурсии по РФ и миру</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="5">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="7">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 7: BOOKING -->
+      <section class="step-card" id="step-7">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p active" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p" data-go-step="11">Документы и право</button>
+        </div>
+
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Регистрация в основных B2B-системах туроператоров (Pegas, Coral, Anex, Intourist)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Навык работы с фильтрами поиска (цена, отель, питание, даты)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Правила аннуляции и штрафы у разных операторов</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Работа с разными типами туров (горящие, раннее бронирование)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Сборка индивидуальных туров (авиабилеты + отели + трансферы + экскурсионка)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Освоение Мои Документы (CRM для турагента)</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="6">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="8">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 8: CUSTOMER SERVICE -->
+      <section class="step-card" id="step-8">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p active" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p" data-go-step="11">Документы и право</button>
+        </div>
+
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Отправка результатов бронирования (ваучер, правила отеля, контакты)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Памятка туристу перед вылетом (что взять, страховка, контакты)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Навык экстренной поддержки в поездке (отмена рейса, плохой отель)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Система сбора обратной связи после тура (рекомендации и повторные клиенты)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Работа с негативом и возвраты (аннуляции туров)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Ведение базы клиентов с историей предпочтений</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="7">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="9">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 9: MARKETING -->
+      <section class="step-card" id="step-9">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p active" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p" data-go-step="11">Документы и право</button>
+        </div>
+
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Оформление VK-группы / Telegram-канала (аватар, шапка, описание услуг)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Регулярный постинг (3–4 раза в неделю): горящие туры, советы, отзывы</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Запуск таргетированной рекламы на свой город (VK, Telegram)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Коллаборации с блогерами и тематическими пабликами</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Продвижение через МАХ</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Создание автоворонки и лидмагнитов (Боты + полезные бесплатные материалы)</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="8">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="10">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 10: SALES -->
+      <section class="step-card" id="step-10">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p active" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p" data-go-step="11">Документы и право</button>
+        </div>
+
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Скрипт первого звонка/сообщения (выявление потребностей)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Скрипт обработки возражений («дорого», «подумаю», «сам найду дешевле»)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Техники допродаж (страховка, экскурсии, апгрейд номера)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Увеличение среднего чека через пакетные предложения</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Сравнение выгоды тура через оператора VS самостоятельной организации путешествия</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Работа с группами и корпоративными клиентами</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="9">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="11">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 11: LAW -->
+      <section class="step-card" id="step-11">
+        <h2 class="section-title text-center">С помощью чего зарабатывать на туризме будет легче</h2>
+        <p class="section-desc text-center">
+          Смысл этого блока: выбрать и обсудить инструменты для монетизации вашей любви к путешествиям
+        </p>
+
+        <div class="tools-tabbar-persistent">
+          <button class="tab-btn-p" data-go-step="6">Страноведение и туризм по РФ</button>
+          <button class="tab-btn-p" data-go-step="7">Техники бронирования</button>
+          <button class="tab-btn-p" data-go-step="8">Клиентский сервис</button>
+          <button class="tab-btn-p" data-go-step="9">Привлечение клиентов</button>
+          <button class="tab-btn-p" data-go-step="10">Продажи и скрипты</button>
+          <button class="tab-btn-p active" data-go-step="11">Документы и право</button>
+        </div>
+
+        <div class="flat-yellow-grid">
+          <div class="yellow-card-flat">
+            <strong>Памятка по документам для выезда (загранпаспорт, дети и тд)</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Чек-лист визовых и безвизовых стран</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Образцы претензий и жалоб для туроператора</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Основные статьи ФЗ «Об основах туристской деятельности»</strong>
+          </div>
+          <div class="yellow-card-flat">
+            <strong>Знание судебной практики по туристическим спорам</strong>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="10">Назад</button>
+          <button class="btn btn-primary btn-gradient btn-next" data-next="12">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 12: INCOME CALCULATOR -->
+      <section class="step-card" id="step-12">
+        <h2 class="section-title text-center">Калькулятор дохода турагента</h2>
+        <p class="section-desc text-center">
+          Давайте рассчитаем реалистичные средние показатели по доходу для начинающего турагента в РФ
+        </p>
+
+        <!-- Period Tabs inside Calculator -->
+        <div class="calculator-periods">
+          <button class="calc-period-btn active" data-period="1">1 месяц</button>
+          <button class="calc-period-btn" data-period="2">3 месяца</button>
+          <button class="calc-period-btn" data-period="3">6 месяцев</button>
+          <button class="calc-period-btn" data-period="4">12 месяцев</button>
+        </div>
+
+        <div class="calculator-layout">
+          <!-- Left Sliders Control (white-card) -->
+          <div class="calc-controls white-card">
+            <h3 class="box-title">Параметры заработка</h3>
+            
+            <!-- Slider 1: Tours Quantity -->
+            <div class="slider-group">
+              <div class="slider-label-wrapper">
+                <span class="slider-title">Продано туров в месяц:</span>
+                <span class="slider-badge-blue" id="badge-tours">2 шт.</span>
+              </div>
+              <input type="range" id="input-tours" class="calc-slider" min="1" max="30" value="2">
+              <div class="slider-limits">
+                <span>1 тур</span>
+                <span>30 туров</span>
+              </div>
+            </div>
+
+            <!-- Slider 2: Average Tour Price -->
+            <div class="slider-group">
+              <div class="slider-label-wrapper">
+                <span class="slider-title">Средняя стоимость тура:</span>
+                <span class="slider-badge-blue" id="badge-tour-price">250 000 руб.</span>
+              </div>
+              <input type="range" id="input-tour-price" class="calc-slider" min="80000" max="400000" step="10000" value="250000">
+              <div class="slider-limits">
+                <span>80 000 руб.</span>
+                <span>400 000 руб.</span>
+              </div>
+            </div>
+
+            <!-- Slider 3: Quantity of Add-on Services (5000r average) -->
+            <div class="slider-group">
+              <div class="slider-label-wrapper">
+                <span class="slider-title">Количество доп. услуг (страховка, виза, экскурсии):</span>
+                <span class="slider-badge-blue" id="badge-addons">0 шт.</span>
+              </div>
+              <input type="range" id="input-addons" class="calc-slider" min="0" max="50" value="0">
+              <div class="slider-limits">
+                <span>0 шт.</span>
+                <span>50 шт. (по 5000р)</span>
+              </div>
+            </div>
+
+            <!-- Slider 4: Commission Percentage -->
+            <div class="slider-group">
+              <div class="slider-label-wrapper">
+                <span class="slider-title">Ваша комиссия (процент):</span>
+                <span class="slider-badge-blue" id="badge-commission">8%</span>
+              </div>
+              <input type="range" id="input-commission" class="calc-slider" min="7" max="12" step="0.5" value="8">
+              <div class="slider-limits">
+                <span>7%</span>
+                <span>12%</span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Right Calculation Results (navy-blue box) -->
+          <div class="calc-results">
+            <h3 class="box-title">Ваши результаты</h3>
+            
+            <div class="result-row">
+              <span class="result-label">ОБЩИЙ ОБЪЕМ ПРОДАЖ</span>
+              <strong class="result-value" id="res-sales-volume">500 000 руб.</strong>
+            </div>
+            
+            <div class="result-row accent-row">
+              <span class="result-label">ЧИСТЫЙ ДОХОД В МЕСЯЦ</span>
+              <strong class="result-value green-text" id="res-monthly-income">40 000 руб.</strong>
+            </div>
+
+            <div class="result-row">
+              <span class="result-label" id="res-period-income-label">ЧИСТЫЙ ДОХОД ЗА ПЕРИОД</span>
+              <strong class="result-value" id="res-period-income">40 000 руб.</strong>
+            </div>
+
+            <div class="calc-target-tip" id="calc-goal-card">
+              <span class="check-badge-icon">✓</span>
+              <p class="target-tip-text" id="calc-goal-text">
+                Чтобы достичь цели в 100 000 руб./мес., вам нужно продавать еще 3 шт. туров в месяц при текущем чеке.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Annual Summary Bar / Total Earnings -->
+        <div class="annual-summary-panel">
+          <div class="annual-text-box">
+            <h4>Прогноз годового дохода при карьерном росте:</h4>
+            <p class="text-muted">Мы суммируем настроенные вами доходы за все 12 месяцев (1 мес. обучения + 2 мес. адаптации + 3 мес. практики + 6 мес. активных продаж)</p>
+          </div>
+          <div class="annual-total-box">
+            <span class="annual-total-label">ИТОГО ЗА 1-Й ГОД РАБОТЫ:</span>
+            <span class="annual-total-value" id="res-annual-total">0 руб.</span>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-back" data-prev="11">Назад</button>
+          <button class="btn btn-primary btn-gradient" id="btn-calc-next">Далее <span class="arrow">→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 13: FINAL RESULTS AND PDF DOWNLOAD (Diagnostic Card) -->
+      <section class="step-card" id="step-13">
+        <h2 class="section-title text-center text-muted">Карьерный отчет готов</h2>
+        <h1 class="welcome-title text-center"><span class="brand-accent-text">Ваша диагностическая карта</span></h1>
+        <p class="section-desc text-center">
+          Поздравляем с прохождением всех этапов карьерной диагностики ВШТ!
+        </p>
+
+        <div class="final-report-layout">
+          <!-- Left side: Summary Card and Bonus -->
+          <div class="report-main-content">
+            <!-- Summary card (white-card) -->
+            <div class="summary-results-card white-card">
+              <h3 class="card-section-title">Резюме вашей диагностики:</h3>
+              <div class="summary-grid">
+                <div class="summary-item">
+                  <span class="summary-label">Профессиональный диагноз:</span>
+                  <strong class="summary-val-text font-bold" id="final-diagnosis">Профессиональный лидер</strong>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Средний балл компетенций:</span>
+                  <strong class="summary-val-text" id="final-average-score">4 / 5</strong>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Потенциальный доход в месяц:</span>
+                  <strong class="summary-val-text text-green" id="final-potential-income">40 000 руб.</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="bonus-banner-dotted">
+              <div class="bonus-layout-row">
+                <!-- Interactive Mystery Box Card -->
+                <div class="promo-badge-left" id="mystery-bonus-card">
+                  <div class="mystery-box-front" id="mystery-box-front">
+                    <span class="mystery-gift-icon">🎁</span>
+                    <span class="mystery-lbl">ОТКРЫТЬ</span>
+                  </div>
+                  <div class="mystery-box-back" id="mystery-box-back" style="display: none;">
+                    <span class="revealed-months-num" id="revealed-months-num">3</span>
+                    <span class="revealed-months-lbl" id="revealed-months-lbl">мес. клуба</span>
+                  </div>
+                </div>
+                <div class="bonus-details-right">
+                  <h4 class="bonus-title">🎁 Персональный бонус</h4>
+                  <p class="bonus-intro-text" id="final-bonus-intro">Нажмите на подарок слева, чтобы испытать удачу и узнать свой персональный бонус!</p>
+                  <div class="decorative-separator"></div>
+                  <p class="bonus-desc" id="final-bonus-text">
+                    [Нажмите на карточку подарка, чтобы открыть ваш бонус]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: Saving results & PDF download trigger -->
+          <div class="report-side-column" style="display: flex; flex-direction: column; gap: 20px;">
+            <div class="report-actions-card white-card" style="width: 100%; margin-bottom: 0;">
+              <div class="success-indicator">
+                <span class="success-check-mark">✓</span>
+              </div>
+              
+              <h3 class="actions-card-title">Результаты готовы!</h3>
+              <p class="actions-card-desc">
+                Ваши показатели и скидка 15% зафиксированы. Карта развития доступна на вашем экране.
+              </p>
+              
+              <button class="btn btn-primary btn-gradient btn-full-width" id="btn-download-pdf" style="margin-bottom: 16px;">Скачать диагностическую карту в PDF <span class="arrow">↓</span></button>
+  
+              <button class="btn btn-secondary btn-full-width btn-outline-blue" id="btn-back-to-wheel">Посмотреть Колесо Баланса</button>
+            </div>
+            
+            <button class="btn btn-gradient btn-large btn-block" id="btn-what-next" style="padding: 16px 20px; font-weight: 800; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 16px; box-shadow: var(--shadow-premium); width: 100%; display: block; border: none; cursor: pointer;">ЧТО ДЕЛАТЬ ДАЛЬШЕ?</button>
+          </div>
+        </div>
+
+        <!-- Hidden template container optimized for PDF download -->
+        <div id="pdf-printable-template" class="pdf-template-hidden">
+          <div class="pdf-header">
+            <img src="image/logo.png" alt="Лого ВШТ" class="pdf-logo">
+            <div class="pdf-header-title">
+              <h2>ВЫСШАЯ ШКОЛА ТУРИЗМА</h2>
+              <p>ОТЧЕТ ПО КАРЬЕРНОЙ ДИАГНОСТИКЕ ОНЛАЙН-ТУРАГЕНТА</p>
+            </div>
+          </div>
+
+          <div class="pdf-section">
+            <h3>1. Персональная информация</h3>
+            <table class="pdf-table">
+              <tr>
+                <td class="pdf-table-label">Имя кандидата:</td>
+                <td class="pdf-table-val" id="pdf-name">Имя</td>
+              </tr>
+              <tr>
+                <td class="pdf-table-label">Профессиональный статус:</td>
+                <td class="pdf-table-val" id="pdf-activity">Статус</td>
+              </tr>
+              <tr>
+                <td class="pdf-table-label">Опыт в организации туров:</td>
+                <td class="pdf-table-val" id="pdf-experience">Опыт</td>
+              </tr>
+              <tr>
+                <td class="pdf-table-label">Целевой доход в месяц:</td>
+                <td class="pdf-table-val" id="pdf-target-income">0 руб.</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="pdf-section">
+            <h3>2. Результаты оценки компетенций</h3>
+            <table class="pdf-table">
+              <tr>
+                <td class="pdf-table-label">Профессиональный диагноз:</td>
+                <td class="pdf-table-val font-bold" id="pdf-diagnosis">Перспективный тревел-эксперт</td>
+              </tr>
+              <tr>
+                <td class="pdf-table-label">Средний балл:</td>
+                <td class="pdf-table-val font-bold" id="pdf-avg-score">2.8 / 5</td>
+              </tr>
+              <tr>
+                <td class="pdf-table-label">Потенциальный доход (прогноз):</td>
+                <td class="pdf-table-val font-bold text-green" id="pdf-potential-income-val">0 руб.</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="pdf-section">
+            <h3>3. Колесо баланса компетенций</h3>
+            <div class="pdf-chart-layout">
+              <div class="pdf-chart-svg-wrapper">
+                <svg id="pdf-radar-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="220" height="220"></svg>
+              </div>
+              <div class="pdf-chart-scores">
+                <ul class="pdf-scores-list">
+                  <li>Знание направлений: <strong id="pdf-score-skills">0/5</strong></li>
+                  <li>Техника бронирования: <strong id="pdf-score-speed">0/5</strong></li>
+                  <li>Продажи и клиенты: <strong id="pdf-score-clients">0/5</strong></li>
+                  <li>Правовые аспекты: <strong id="pdf-score-confidence">0/5</strong></li>
+                  <li>Маркетинг и бренд: <strong id="pdf-score-check">0/5</strong></li>
+                  <li>Сопровождение: <strong id="pdf-score-income">0/5</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pdf-section page-break">
+            <h3>4. Ключевые рекомендации</h3>
+            <div class="pdf-recs" id="pdf-recommendations-list">
+              <!-- Recs dynamically loaded -->
+            </div>
+          </div>
+
+          <div class="pdf-section">
+            <h3>5. Карьерный прогноз доходов на 1 год</h3>
+            <table class="pdf-table">
+              <thead>
+                <tr>
+                  <th>Период</th>
+                  <th>Туров в мес.</th>
+                  <th>Доп. услуг</th>
+                  <th>Объем продаж</th>
+                  <th>Месячный доход</th>
+                </tr>
+              </thead>
+              <tbody id="pdf-calc-tbody">
+                <!-- rows loaded dynamically -->
+              </tbody>
+            </table>
+            <div class="pdf-total-earnings">
+              <span>Суммарный доход за 1-й год работы: </span>
+              <strong id="pdf-total-annual-earnings">0 руб.</strong>
+            </div>
+          </div>
+
+          <div class="pdf-section" id="pdf-selected-tools-section">
+            <h3>6. С помощью чего выйти на желаемый доход будет легче</h3>
+            <div id="pdf-selected-tools-list" class="pdf-recs" style="margin-bottom: 10px;">
+              <!-- Selected tools loaded dynamically -->
+            </div>
+            <div id="pdf-selected-tools-analysis" class="pdf-rec-item" style="font-weight: 500; color: var(--color-accent); background-color: rgba(29, 105, 113, 0.04); padding: 10px; border-radius: 6px; border-left: 3px solid var(--color-accent); font-size: 0.85rem; line-height: 1.4;">
+              <!-- Selected tools analysis dynamic summary -->
+            </div>
+          </div>
+
+          <div class="pdf-footer">
+            <div class="pdf-bonus-box">
+              <p><strong>Подарочный бонус:</strong> <span id="pdf-pdf-bonus-text">0 месяцев Клуба + курс</span></p>
+              <p>Персональный бонус закреплен за вашим именем.</p>
+            </div>
+            <p class="pdf-date">Отчет сформирован: <span id="pdf-date-today">01.07.2026</span> | Высшая Школа Туризма</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 14: WHAT TO DO NEXT (Слайд 14) -->
+      <section class="step-card" id="step-14">
+        <div class="step-header" style="text-align: center; margin-bottom: 30px;">
+          <h2 class="step-title" style="font-size: 2.2rem; margin-bottom: 12px;">Что дальше?</h2>
+          <p class="step-desc" style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 1.05rem;">
+            Вы прошли диагностику, увидели свои слабые места и точки роста. Теперь у вас два пути. Какой вы выберете – зависит только от вас.
+          </p>
+        </div>
+        
+        <div class="next-paths-layout">
+          <!-- Path 1: Alone -->
+          <div class="path-card path-alone white-card">
+            <h4 class="path-title danger-text">🚫 Двигаться самостоятельно, вслепую, с ошибками:</h4>
+            <ul class="path-list">
+              <li><span>1.</span> Потеряете 3–6 месяцев на сбор информации по крупицам в интернете</li>
+              <li><span>2.</span> Закрепите неверные техники продаж — переучиваться сложнее</li>
+              <li><span>3.</span> Будете разбираться в сайтах операторов методом тыка, потеряете нервы</li>
+              <li><span>4.</span> Ошибки в документах и визах → отказы и финансовые потери</li>
+              <li><span>5.</span> Первые клиенты уйдут к конкурентам из-за неуверенности</li>
+              <li><span>6.</span> Выход на доход 6+ месяцев, высокий риск уйти в минус</li>
+              <li><span>7.</span> Современные инструменты (нейросети, Telegram, Макс) можете осваивать годами</li>
+            </ul>
+          </div>
+          
+          <!-- Path 2: With Us -->
+          <div class="path-card path-together white-card">
+            <h4 class="path-title success-text">✅ Быстро освоить профессию и выйти на доход вместе с нами:</h4>
+            <ul class="path-list">
+              <li><span>1.</span> Готовая пошаговая система за 90 дней без “воды”</li>
+              <li><span>2.</span> Работающие алгоритмы продаж от опытных турагентов с первого дня</li>
+              <li><span>3.</span> Доступ и уроки по каждому оператору + закрытый чат</li>
+              <li><span>4.</span> Проверим каждый документ и заявку, избежите штрафов и отказов</li>
+              <li><span>5.</span> Первые клиенты через 2–3 недели, окупите обучение с первых проданных туров</li>
+              <li><span>6.</span> Поможем выбрать специализацию, упаковать личный бренд и выделиться на рынке</li>
+              <li><span>7.</span> Внедрите нейросети и продвижение в соцсетях, сэкономите 10+ часов в неделю</li>
+              <li><span>8.</span> Мы на связи 24/7 – поможем решить любую проблему, сохраним вашу репутацию и деньги</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="next-footer-panel">
+          <div class="next-footer-text">
+            Если вы хотите сэкономить время, деньги и нервы – добро пожаловать к нам в команду. У нас уже более 900 агентов, которые вышли на доход от 80 000 до 300 000 ₽ уже через полгода работы.
+          </div>
+          <div class="next-footer-action">
+            <a href="https://drive.google.com/file/d/1b5KjXhpTXtEZzS--T1ZcHNUOLucSc0si/view?usp=sharing" target="_blank" class="btn btn-gradient btn-large" style="text-decoration: none; display: inline-block; padding: 16px 28px; font-weight: 800; border-radius: 12px; font-size: 0.95rem;">
+              Перейти к программе обучения →
+            </a>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </div>
+
+  <!-- Javascript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
